@@ -200,7 +200,7 @@ export default function Home() {
   const filteredProducts = products.filter(product => product.name[lang].toLowerCase().startsWith(searchTerm.toLowerCase()) || product.name[lang].toLowerCase().includes(searchTerm.toLowerCase()));
 
   return (
-    <main className="min-h-screen pb-72"> {/* Добавлен padding-bottom для учета высоты фиксированного футера */}
+    <main className="min-h-screen">
       {/* Навигация */}
       <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
