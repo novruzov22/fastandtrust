@@ -247,7 +247,7 @@ export default function Home() {
           </section>
 
           {/* Сетка товаров */}
-          <section className="max-w-7xl mx-auto px-4 py-12">
+          <section className="max-w-7xl mx-auto px-4 py-12 bg-white">
             <div className="flex flex-col lg:flex-row gap-12">
               {/* Основная часть с товарами */}
               <div className="flex-grow">
