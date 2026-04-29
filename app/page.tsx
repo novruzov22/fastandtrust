@@ -257,10 +257,10 @@ export default function Home() {
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 xl:grid-cols-3">
-                  {filteredProducts.slice(0, visibleCount).map((product) => (
+                  {filteredProducts.slice(0, visibleCount).map((product) => ( // Изменено на filteredProducts
                     <div 
                       key={product.id} 
-                      className="group flex flex-col cursor-pointer bg-slate-100/60 p-5 rounded-[2.5rem] border-2 border-transparent hover:border-indigo-600 hover:bg-white transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-2"
+                      className="group flex flex-col cursor-pointer bg-white p-5 rounded-[2.5rem] border-2 border-transparent hover:border-indigo-600 hover:bg-white transition-all duration-500 shadow-sm hover:shadow-2xl hover:-translate-y-2"
                       onClick={() => setSelectedProduct(product)}
                     >
                       <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-white mb-5 shadow-inner">
@@ -377,7 +377,7 @@ export default function Home() {
                 <>
                   <button 
                     onClick={prevImage}
-                    className="absolute left-6 p-4 rounded-full bg-white/80 backdrop-blur-md shadow-lg text-indigo-600 opacity-0 group-hover/modal:opacity-100 hover:bg-indigo-600 hover:text-white transition-all duration-300 transform -translate-x-4 group-hover/modal:translate-x-0"
+                    className="absolute left-6 p-4 rounded-full bg-white/80 backdrop-blur-md shadow-lg text-indigo-600 opacity-100 lg:opacity-0 lg:group-hover/modal:opacity-100 hover:bg-indigo-600 hover:text-white transition-all duration-300 transform -translate-x-4 lg:group-hover/modal:translate-x-0"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
@@ -385,7 +385,7 @@ export default function Home() {
                   </button>
                   <button 
                     onClick={nextImage}
-                    className="absolute right-6 p-4 rounded-full bg-white/80 backdrop-blur-md shadow-lg text-indigo-600 opacity-0 group-hover/modal:opacity-100 hover:bg-indigo-600 hover:text-white transition-all duration-300 transform translate-x-4 group-hover/modal:translate-x-0"
+                    className="absolute right-6 p-4 rounded-full bg-white/80 backdrop-blur-md shadow-lg text-indigo-600 opacity-100 lg:opacity-0 lg:group-hover/modal:opacity-100 hover:bg-indigo-600 hover:text-white transition-all duration-300 transform translate-x-4 lg:group-hover/modal:translate-x-0"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />

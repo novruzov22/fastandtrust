@@ -11,7 +11,7 @@ export default function SearchBar({ searchTerm, onSearchChange, lang, className 
         placeholder={placeholderText}
         value={searchTerm}
         onChange={(e) => onSearchChange(e.target.value)}
-        className={className || "w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all shadow-sm"}
+        className={`${className || "w-full p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all shadow-sm"} text-black font-medium`}
       />
     </div>
   );
